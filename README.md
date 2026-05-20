@@ -8,8 +8,8 @@ A lightweight Windows app to add and manage wallpapers with a quick Hotkey
 
 - Build a personal wallpaper gallery by importing images
 - Double-click any wallpaper in the gallery to set it immediately
-- Set a wallpaper style per image — Fill, Fit, Stretch, Center, or Tile
-- **Quick Switch mode** — cycles through your gallery in the background with a hotkey, no window opens
+- Set a wallpaper style per image including: Fill, Fit, Stretch, Center, or Tile
+- **Quick Switch mode**  cycles through your gallery in the background with a hotkey, no window opens
 - Your gallery, styles, and cycle position all persist between sessions
 
 ---
