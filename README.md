@@ -43,7 +43,7 @@ Right click to delete, double click to set as wallpaper inside the app.
 
 ```bash
 pip install customtkinter pillow pyinstaller
-pyinstaller --onefile --windowed --name QuickWallpaper wallpaper_switch.py
+pyinstaller --onefile --windowed --name QuickWallpaper main.py
 ```
 
 Output will be in the `dist/` folder.
