@@ -16,7 +16,7 @@ A lightweight Windows app to add and manage wallpapers with a quick Hotkey
 
 ## Getting Started
 
-Download `QuickWallpaper.exe` from [Releases](#) and run it. No install needed.
+Download `QuickWallpaper.exe` from [Releases](https://github.com/Viijval/QuickSwitchWallpaper/releases) and run it. No install needed.
 
 **First time setup**
 1. Open the app and import a few wallpapers using the **＋ Import Wallpaper** button
