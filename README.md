@@ -1,38 +1,61 @@
-Quick Wallpaper Switch
-Tired of digging through File Explorer every time you want to change your wallpaper? Yeah, same.
-This is a lightweight Windows app that lets you build a gallery of wallpapers and switch between them instantly — either through the UI or a single keyboard shortcut, no window, no clicks.
+# Quick Wallpaper Switch
 
-Features
+A lightweight Windows utility to manage and cycle through wallpapers — from a clean gallery UI or silently via a hotkey.
 
-Import wallpapers and manage them in a visual gallery
-Double-click any wallpaper in the gallery to set it instantly
-Quick Switch — cycles through your wallpapers silently via a hotkey (no app window)
-Per-wallpaper style settings (Fill, Fit, Stretch, Center, Tile)
-Everything persists — your gallery and cycle position are saved across sessions
+No Settings app. No File Explorer. Just instant switching.
 
+---
 
-Setup
-Run the app
-Just double-click QuickWallpaper.exe. Import some wallpapers, pick your styles.
-Set up the Quick Switch hotkey
+## What it does
 
-Right-click QuickWallpaper.exe → Create shortcut
-Right-click the shortcut → Properties
-Set Target to:
+- Build a personal wallpaper gallery by importing images
+- Double-click any wallpaper in the gallery to set it immediately
+- Set a wallpaper style per image — Fill, Fit, Stretch, Center, or Tile
+- **Quick Switch mode** — cycles through your gallery in the background with a hotkey, no window opens
+- Your gallery, styles, and cycle position all persist between sessions
 
+---
+
+## Getting Started
+
+Download `QuickWallpaper.exe` from [Releases](#) and run it. No install needed.
+
+**First time setup**
+1. Open the app and import a few wallpapers using the **＋ Import Wallpaper** button
+2. Set the style for each one using the dropdown on the card
+3. Double-click any card to set it as your wallpaper
+
+**Setting up the Quick Switch hotkey**
+1. Right-click `QuickWallpaper.exe` → **Create shortcut**
+2. Right-click the shortcut → **Properties**
+3. Set the Target field to:
+   ```
    "C:\path\to\QuickWallpaper.exe" --quick-switch
+   ```
+4. Click the **Shortcut key** field and press your combo (e.g. `Ctrl + Alt + W`)
+5. Hit **Apply → OK**
 
-Set a Shortcut key (e.g. Ctrl + Alt + W)
-Apply → OK
+That's it. The hotkey will now silently cycle to the next wallpaper every time you press it.
 
-Now that combo cycles your wallpapers in the background — no window, instant switch.
+---
 
-Build from source
-bashpip install customtkinter pillow pyinstaller
+## Build from Source
+
+```bash
+pip install customtkinter pillow pyinstaller
 pyinstaller --onefile --windowed --name QuickWallpaper wallpaper_switch.py
-Exe will be in the dist folder.
+```
 
-Data
-Your gallery is saved at %AppData%\QuickWallpaper\data.json. Wallpaper files themselves aren't moved or copied — just referenced by path, so don't delete or move them.
+Output will be in the `dist/` folder.
 
-Built with Python, CustomTkinter, and mild frustration with the Windows Settings app.
+---
+
+## Notes
+
+- Wallpaper files are referenced by path, not copied — don't move or delete them after importing
+- Gallery data is stored at `%AppData%\QuickWallpaper\data.json`
+- Windows only
+
+---
+
+Built with Python + CustomTkinter.
