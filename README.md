@@ -1,8 +1,6 @@
 # Quick Wallpaper Switch
 
-A lightweight Windows utility to manage and cycle through wallpapers — from a clean gallery UI or silently via a hotkey.
-
-No Settings app. No File Explorer. Just instant switching.
+A lightweight Windows app to add and manage wallpapers with a quick Hotkey 
 
 ---
 
@@ -28,7 +26,7 @@ Download `QuickWallpaper.exe` from [Releases](#) and run it. No install needed.
 **Setting up the Quick Switch hotkey**
 1. Right-click `QuickWallpaper.exe` → **Create shortcut**
 2. Right-click the shortcut → **Properties**
-3. Set the Target field to:
+3. Set the Target field to: (IMPORTANT)
    ```
    "C:\path\to\QuickWallpaper.exe" --quick-switch
    ```
@@ -36,7 +34,9 @@ Download `QuickWallpaper.exe` from [Releases](#) and run it. No install needed.
 5. Hit **Apply → OK**
 
 That's it. The hotkey will now silently cycle to the next wallpaper every time you press it.
-
+or just double click.
+If you want to get into the app again, open the .exe file instead of the shortcut and you can customize the wallpapers as you wish.
+Right click to delete, double click to set as wallpaper inside the app.
 ---
 
 ## Build from Source
